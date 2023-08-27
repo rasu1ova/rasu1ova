@@ -1,23 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import { Navigations } from "./Navigations";
-import { Logo } from "../public/index";
+
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Blog", href: "/blog" },
+  { label: "Skills", href: "/skills" },
   { label: "About", href: "about" },
+  { label: "Projects", href: "projects" },
 ];
 const Header = () => {
   return (
     <header>
       <div className="container flex items-center justify-between flex-row py-4">
-        <div className="logo">
-          <Image 
-            src={Logo}
-            alt="there is logo img"
-            width={290}
-            height={140} />
-        </div>
+        <div className="logo">Rasu1ova</div>
         <nav>
           <ul className="flex gap-6">
             <Navigations navLinks={navItems} />

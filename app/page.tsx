@@ -1,12 +1,7 @@
-
-export default function Home({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Home() {
   return (
-    <main className=''>
-      {children}
+    <main className="min-h-screen">
+      <div className="container">Home</div>
     </main>
   );
 }
